@@ -1,0 +1,43 @@
+{
+  "project": "news_topics_classification",
+  "dataset": "sh1zuka/indonesia-news-dataset-2024",
+  "text_columns": [
+    "Judul",
+    "Content",
+    "tag1",
+    "tag2",
+    "tag3",
+    "tag4",
+    "tag5"
+  ],
+  "label_column": "topic",
+  "trained_at_utc": "2026-01-01T15:34:15Z",
+  "python": "3.10.11",
+  "platform": "Windows 10",
+  "versions": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  },
+  "metrics": {
+    "val_macro_f1": 0.971004193659479,
+    "test_macro_f1": 0.9684619893983675
+  },
+  "params": {
+    "ngram_max": 1,
+    "min_df": 1,
+    "max_df": 0.986763685816644,
+    "word_max_features": 300000,
+    "char_max_features": 60000,
+    "C": 0.7112755817652814
+  },
+  "notes": "",
+  "cleaning": {
+    "pipeline": [
+      "IndonesianNewsCleaner"
+    ],
+    "module": "news_classification.preprocessing.cleaner"
+  }
+}

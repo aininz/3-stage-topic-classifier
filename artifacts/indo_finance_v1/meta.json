@@ -1,0 +1,38 @@
+{
+  "project": "news_topics_classification",
+  "dataset": "intanm/indonesian-financial-topic-classification-dataset",
+  "text_columns": [
+    "text"
+  ],
+  "label_column": "label",
+  "trained_at_utc": "2026-01-01T15:37:22Z",
+  "python": "3.10.11",
+  "platform": "Windows 10",
+  "versions": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  },
+  "metrics": {
+    "val_macro_f1": 0.8050535260240046,
+    "test_macro_f1": 0.8058238829216687
+  },
+  "params": {
+    "ngram_max": 3,
+    "min_df": 1,
+    "max_df": 0.9550456378672522,
+    "word_max_features": 190000,
+    "char_max_features": 100000,
+    "C": 1.0234266273540518
+  },
+  "notes": "",
+  "cleaning": {
+    "pipeline": [
+      "IndonesianNewsCleaner",
+      "FinanceCleaner"
+    ],
+    "module": "news_classification.preprocessing.cleaner"
+  }
+}
