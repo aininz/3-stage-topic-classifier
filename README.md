@@ -37,6 +37,14 @@ This model uses a two-stage (hierarchical) classifier because the label space is
 
 However, I didn't want to hardcode a manual topic taxonomy, because manual taxonomies often bake in our assumptions about what "belongs together", but those assumptions don't always match how the articles are actually written. Two topics can feel related in our heads yet use very different vocabulary, while other topics we'd separate might share a lot of recurring phrases. So instead of forcing rules like "K-Pop must belong under Hiburan", the model builds "aggregate topics" automatically from the data. If K-Pop articles are textually closest to Hiburan-like labels, they’ll naturally end up grouped together for Stage 1 without even a single manual mapping.
 
+### Dataset
+
+This project uses two datasets:
+
+- [Indonesia News Dataset (2025) from Kaggle](https://www.kaggle.com/datasets/sh1zuka/indonesia-news-dataset-2024) (selective manual labeling, clustered using SentenceTransformers + BERTopic)
+
+- [Indonesian Financial Topic Classification Dataset from HuggingFace](https://huggingface.co/datasets/intanm/indonesian-financial-topic-classification-dataset)
+
 ### Implementation
 <img src="charts/flowchart.png" alt="Flowchart" width="20%">
 
