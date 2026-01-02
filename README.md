@@ -1,6 +1,6 @@
 # 3-Stage (AgglomerativeClustering + 2-Stage Hierarchical LinearSVC) News Topic Classifier
 
-This projects trains a hierarchical text classifier for Indonesian articles using TF-IDF features + LinearSVC, with a data-driven "aggregate topic" stage built via AgglomerativeClustering. Validated on two case studies: 
+This projects trains a **hierarchical text classifier** for Indonesian articles using **TF-IDF features + LinearSVC**, with a **data-driven "aggregate topic" stage built via AgglomerativeClustering**. Validated on two case studies: 
 - an unlabeled Indonesian news corpus (Kaggle 2025) that I labeled efficiently via a cluster-first workflow (SentenceTransformers + BERTopic, then selective manual labeling)
 - a finance-topic dataset consisting of short, headline-like sentences (avg. ~118 characters), to test robustness across different text lengths and class imbalance.
 
