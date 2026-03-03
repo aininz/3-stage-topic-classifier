@@ -163,7 +163,7 @@ Accuracy **0.971**, weighted F1 **0.972**, macro F1 **0.968 (n=697)**. Most clas
 | **macro avg**    |  **0.82** | **0.79** | **0.81** | **4193** |
 | **weighted avg** |  **0.83** | **0.83** | **0.83** | **4193** |
 
-Accuracy **0.83**, weighted F1 **0.83**, macro **F1 0.81 (n=4193)**. Several classes achieve strong precision/recall (many around 0.89–0.95 F1), but the most notable errors occur in:
+Accuracy **0.83**, weighted F1 **0.83**, macro **F1 0.81 (n=4193)**. Several classes achieve strong precision/recall (many around 0.89 - 0.95 F1), but the most notable errors occur in:
 - labels with lower supports (e.g., label 10, n=16; label 11, n=10; label 8, n=43), where performance is more sensitive to small sample sizes
 - labels that are probably harder to separate (e.g., labels 0/3/9, ~0.65-0.68 F1), which likely reflect overlapping semantics in short headline-like text
 
